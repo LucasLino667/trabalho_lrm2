@@ -1,25 +1,7 @@
-# Quasar App (-)
+# trabalho_lrm2
 
-## Install the dependencies
+Projeto de Programação Web 1
 
-```bash
-yarn
-# or
-npm install
-```
+Idéia do projeto: um app / desktop que escolhe um ou mais sugestões de filmes para assistir
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-
-```bash
-quasar dev
-```
-
-### Build the app for production
-
-```bash
-quasar build
-```
-
-### Customize the configuration
-
-See [Configuring quasar.config.js](https://legacy-app.quasar.dev/quasar-cli-vite-v2/quasar-config-js).
+Integrantes: Renan Phelipe Vieira , Poliana Masotti e Lucas Lino
