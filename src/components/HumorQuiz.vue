@@ -21,32 +21,189 @@
 
       <!-- Question Phase -->
       <div v-if="step <= totalSteps" class="question-container">
-        <!-- Question Title -->
-        <div class="text-h6 text-white text-center q-mb-lg question-text">
-          {{ currentQuestion.question }}
-        </div>
+        <div class="row q-col-gutter-lg items-center justify-center">
+          
+          <!-- Genie Column (Akinator Roxo Animado) -->
+          <div class="col-12 col-sm-4 flex flex-center">
+            <div class="genie-container">
+              <!-- SVG Gênio Roxo -->
+              <svg 
+                viewBox="0 0 200 200" 
+                class="purple-genie" 
+                :class="{ 'thinking': isTransitioning }"
+                width="160" 
+                height="160"
+              >
+                <defs>
+                  <radialGradient id="genieGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.4" />
+                    <stop offset="100%" stop-color="#8a2be2" stop-opacity="0" />
+                  </radialGradient>
+                  <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#d8b4fe" />
+                    <stop offset="60%" stop-color="#a855f7" />
+                    <stop offset="100%" stop-color="#701a75" />
+                  </linearGradient>
+                  <linearGradient id="turbanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f3e8ff" />
+                    <stop offset="100%" stop-color="#c084fc" />
+                  </linearGradient>
+                  <linearGradient id="vestGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#3b0764" />
+                    <stop offset="100%" stop-color="#1e1b4b" />
+                  </linearGradient>
+                  <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="3" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                  </filter>
+                </defs>
 
-        <!-- Options list -->
-        <div class="column q-gutter-md">
-          <q-btn
-            v-for="(option, index) in currentQuestion.options"
-            :key="index"
-            class="quiz-option-btn text-left justify-start"
-            align="left"
-            no-caps
-            flat
-            @click="answerQuestion(option.genres, option.typeScore)"
-          >
-            <div class="row items-center no-wrap full-width">
-              <div class="option-badge q-mr-md flex flex-center">{{ getOptionLetter(index) }}</div>
-              <div class="text-body1 option-text col">{{ option.text }}</div>
+                <!-- Glow de Fundo -->
+                <circle cx="100" cy="110" r="70" fill="url(#genieGlow)" />
+
+                <!-- Cauda de Fumaça do Gênio -->
+                <path d="M100,160 Q80,180 100,195 Q120,180 100,160" fill="url(#bodyGrad)" opacity="0.8" />
+                <path d="M100,140 Q60,165 100,185 Q130,160 100,140" fill="url(#bodyGrad)" opacity="0.6" />
+                <path d="M100,120 Q50,150 100,170 Q140,145 100,120" fill="url(#bodyGrad)" />
+
+                <!-- Braços Cruzados -->
+                <path d="M60,110 Q45,115 50,125 Q55,135 75,130 Q90,125 100,125" fill="url(#bodyGrad)" stroke="#6b21a8" stroke-width="1.5" />
+                <path d="M140,110 Q155,115 150,125 Q145,135 125,130 Q110,125 100,125" fill="url(#bodyGrad)" stroke="#6b21a8" stroke-width="1.5" />
+
+                <!-- Colete -->
+                <path d="M80,95 Q100,90 120,95 Q130,120 100,125 Q70,120 80,95" fill="url(#vestGrad)" />
+                <path d="M80,95 Q100,105 100,125" fill="none" stroke="#e9d5ff" stroke-width="1" />
+                <path d="M120,95 Q100,105 100,125" fill="none" stroke="#e9d5ff" stroke-width="1" />
+
+                <!-- Orelhas -->
+                <path d="M75,70 Q60,70 70,80 Z" fill="url(#bodyGrad)" stroke="#6b21a8" stroke-width="1" />
+                <path d="M125,70 Q140,70 130,80 Z" fill="url(#bodyGrad)" stroke="#6b21a8" stroke-width="1" />
+
+                <!-- Cabeça -->
+                <ellipse cx="100" cy="78" rx="26" ry="24" fill="url(#bodyGrad)" />
+
+                <!-- Bigode e Barba -->
+                <path d="M88,84 Q100,88 100,82 Q100,88 112,84 Q100,92 88,84" fill="#3b0764" />
+                <path d="M96,94 Q100,105 100,105 Q100,105 104,94 Z" fill="#3b0764" />
+
+                <!-- Olhos -->
+                <ellipse cx="91" cy="72" rx="4" ry="6" fill="#fff" />
+                <circle cx="91" cy="72" r="2" fill="#581c87" />
+                <ellipse cx="109" cy="72" rx="4" ry="6" fill="#fff" />
+                <circle cx="109" cy="72" r="2" fill="#581c87" />
+
+                <!-- Sobrancelhas -->
+                <path d="M85,65 Q91,62 97,67" fill="none" stroke="#3b0764" stroke-width="2" stroke-linecap="round" />
+                <path d="M115,65 Q109,62 103,67" fill="none" stroke="#3b0764" stroke-width="2" stroke-linecap="round" />
+
+                <!-- Sorriso -->
+                <path d="M94,80 Q100,85 106,80" fill="none" stroke="#3b0764" stroke-width="1.5" stroke-linecap="round" />
+                <!-- Nariz -->
+                <path d="M98,74 Q100,77 102,74" fill="none" stroke="#6b21a8" stroke-width="1.5" />
+
+                <!-- Turbante -->
+                <path d="M72,62 Q100,45 128,62 Q130,50 100,40 Q70,50 72,62" fill="url(#turbanGrad)" stroke="#7e22ce" stroke-width="1" />
+                <path d="M82,60 Q100,50 118,60" fill="url(#turbanGrad)" />
+
+                <!-- Gema do Turbante (Neon) -->
+                <polygon points="100,46 104,52 100,58 96,52" fill="#00f0ff" filter="url(#neonGlow)" />
+                <path d="M100,46 Q105,30 95,20 Q92,32 100,46" fill="#c084fc" />
+              </svg>
             </div>
-          </q-btn>
+          </div>
+
+          <!-- Question & Options Column -->
+          <div class="col-12 col-sm-8">
+            <!-- Balão de Fala com a Pergunta -->
+            <div class="speech-bubble q-mb-lg">
+              <div class="text-h6 text-white text-center question-text">
+                {{ isTransitioning ? genieReaction : currentQuestion.question }}
+              </div>
+            </div>
+
+            <!-- Lista de Opções -->
+            <div class="column q-gutter-md">
+              <q-btn
+                v-for="(option, index) in currentQuestion.options"
+                :key="index"
+                class="quiz-option-btn text-left justify-start"
+                align="left"
+                no-caps
+                flat
+                :disable="isTransitioning"
+                @click="answerQuestion(option)"
+              >
+                <div class="row items-center no-wrap full-width">
+                  <div class="option-badge q-mr-md flex flex-center">{{ getOptionLetter(index) }}</div>
+                  <div class="text-body1 option-text col">{{ option.text }}</div>
+                </div>
+              </q-btn>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <!-- Results Phase -->
       <div v-else class="results-container text-center">
+        <!-- Gênio comemorando nos Resultados -->
+        <div class="flex flex-center q-mb-md">
+          <div class="genie-container">
+            <svg viewBox="0 0 200 200" class="purple-genie celebrating" width="140" height="140">
+              <defs>
+                <radialGradient id="genieGlowRes" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.4" />
+                  <stop offset="100%" stop-color="#8a2be2" stop-opacity="0" />
+                </radialGradient>
+                <linearGradient id="bodyGradRes" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#d8b4fe" />
+                  <stop offset="60%" stop-color="#a855f7" />
+                  <stop offset="100%" stop-color="#701a75" />
+                </linearGradient>
+                <linearGradient id="turbanGradRes" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f3e8ff" />
+                  <stop offset="100%" stop-color="#c084fc" />
+                </linearGradient>
+                <linearGradient id="vestGradRes" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#3b0764" />
+                  <stop offset="100%" stop-color="#1e1b4b" />
+                </linearGradient>
+                <filter id="neonGlowRes" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="3" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+              </defs>
+
+              <circle cx="100" cy="110" r="70" fill="url(#genieGlowRes)" />
+              <path d="M100,160 Q80,180 100,195 Q120,180 100,160" fill="url(#bodyGradRes)" opacity="0.8" />
+              <path d="M100,140 Q60,165 100,185 Q130,160 100,140" fill="url(#bodyGradRes)" opacity="0.6" />
+              <path d="M100,120 Q50,150 100,170 Q140,145 100,120" fill="url(#bodyGradRes)" />
+              <path d="M60,110 Q45,115 50,125 Q55,135 75,130 Q90,125 100,125" fill="url(#bodyGradRes)" stroke="#6b21a8" stroke-width="1.5" />
+              <path d="M140,110 Q155,115 150,125 Q145,135 125,130 Q110,125 100,125" fill="url(#bodyGradRes)" stroke="#6b21a8" stroke-width="1.5" />
+              <path d="M80,95 Q100,90 120,95 Q130,120 100,125 Q70,120 80,95" fill="url(#vestGradRes)" />
+              <path d="M80,95 Q100,105 100,125" fill="none" stroke="#e9d5ff" stroke-width="1" />
+              <path d="M120,95 Q100,105 100,125" fill="none" stroke="#e9d5ff" stroke-width="1" />
+              <path d="M75,70 Q60,70 70,80 Z" fill="url(#bodyGradRes)" stroke="#6b21a8" stroke-width="1" />
+              <path d="M125,70 Q140,70 130,80 Z" fill="url(#bodyGradRes)" stroke="#6b21a8" stroke-width="1" />
+              <ellipse cx="100" cy="78" rx="26" ry="24" fill="url(#bodyGradRes)" />
+              <path d="M88,84 Q100,88 100,82 Q100,88 112,84 Q100,92 88,84" fill="#3b0764" />
+              <path d="M96,94 Q100,105 100,105 Q100,105 104,94 Z" fill="#3b0764" />
+              <ellipse cx="91" cy="72" rx="4" ry="6" fill="#fff" />
+              <circle cx="91" cy="72" r="2" fill="#581c87" />
+              <ellipse cx="109" cy="72" rx="4" ry="6" fill="#fff" />
+              <circle cx="109" cy="72" r="2" fill="#581c87" />
+              <path d="M85,65 Q91,62 97,67" fill="none" stroke="#3b0764" stroke-width="2" stroke-linecap="round" />
+              <path d="M115,65 Q109,62 103,67" fill="none" stroke="#3b0764" stroke-width="2" stroke-linecap="round" />
+              <path d="M94,80 Q100,85 106,80" fill="none" stroke="#3b0764" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M98,74 Q100,77 102,74" fill="none" stroke="#6b21a8" stroke-width="1.5" />
+              <path d="M72,62 Q100,45 128,62 Q130,50 100,40 Q70,50 72,62" fill="url(#turbanGradRes)" stroke="#7e22ce" stroke-width="1" />
+              <path d="M82,60 Q100,50 118,60" fill="url(#turbanGradRes)" />
+              <polygon points="100,46 104,52 100,58 96,52" fill="#00f0ff" filter="url(#neonGlowRes)" />
+              <path d="M100,46 Q105,30 95,20 Q92,32 100,46" fill="#c084fc" />
+            </svg>
+          </div>
+        </div>
+
         <!-- Personality Header -->
         <div class="text-h4 text-accent text-weight-bolder q-mb-sm">
           {{ resultProfile.title }}
@@ -165,6 +322,10 @@ const navigateHome = () => {
 const step = ref(1)
 const totalSteps = 4
 
+// Estados de transição e fala do gênio
+const isTransitioning = ref(false)
+const genieReaction = ref('')
+
 // Scores mapping
 const genreScores = ref({
   Ação: 0,
@@ -186,6 +347,7 @@ const typeScores = ref({
   D: 0, // Thriller/Mystery/Horror focus
 })
 
+// Perguntas com falas de reações integradas
 const questions = [
   {
     question: 'Como está sua bateria social hoje?',
@@ -194,21 +356,25 @@ const questions = [
         text: 'Quero ver explosões e zero interações humanas.',
         genres: ['Ação', 'Ficção Científica', 'Aventura'],
         typeScore: 'A',
+        reaction: 'Nada como um bom isolamento com dinamite! 💥'
       },
       {
         text: 'Quero chorar em posição fetal debaixo das cobertas.',
         genres: ['Drama', 'Romance'],
         typeScore: 'B',
+        reaction: 'Entendo perfeitamente, já vou preparando os lenços... 🥺'
       },
       {
         text: 'Quero gargalhar até meu abdômen pedir arrego.',
         genres: ['Comédia', 'Animação'],
         typeScore: 'C',
+        reaction: 'Rir é o melhor remédio, prepare-se para gargalhar! 😂'
       },
       {
         text: 'Quero desvendar crimes escabrosos com um café frio.',
         genres: ['Suspense', 'Mistério', 'Terror'],
         typeScore: 'D',
+        reaction: 'Pegue sua lupa, caro detetive... O mistério nos aguarda! 🔍'
       },
     ],
   },
@@ -219,21 +385,25 @@ const questions = [
         text: 'Uma nave espacial à deriva no vácuo eterno.',
         genres: ['Ficção Científica', 'Aventura'],
         typeScore: 'A',
+        reaction: 'No espaço ninguém vai ouvir ele reclamar! 🚀🌌'
       },
       {
         text: 'Um almoço interminável discutindo política familiar.',
         genres: ['Drama', 'Comédia'],
         typeScore: 'B',
+        reaction: 'Isso que é punição cruel... Fiquei até com pena! 🫠'
       },
       {
         text: 'Uma cabana escura no meio de uma floresta macabra.',
         genres: ['Terror', 'Suspense'],
         typeScore: 'D',
+        reaction: 'Gostei da sua vibe sombria... Que comece o suspense! 💀'
       },
       {
         text: "Um musical onde as pessoas dançam em vez de responder 'bom dia'.",
         genres: ['Romance', 'Animação'],
         typeScore: 'C',
+        reaction: 'Que pesadelo ritmado! Dançar logo cedo... 🕺🏽✨'
       },
     ],
   },
@@ -244,21 +414,25 @@ const questions = [
         text: 'Pipoca temperada com o sal das lágrimas de quem me irritou.',
         genres: ['Ação', 'Suspense'],
         typeScore: 'A',
+        reaction: 'Eita, que tempero vingativo! Gostei! 🍿⚡'
       },
       {
         text: 'Uma barra de chocolate gigante para suprir carências emocionais.',
         genres: ['Romance', 'Drama'],
         typeScore: 'B',
+        reaction: 'O chocolate cura tudo, inclusive a alma! 🍫❤️'
       },
       {
         text: 'Um miojo cru às duas da manhã porque sim.',
         genres: ['Comédia', 'Animação'],
         typeScore: 'C',
+        reaction: 'Um clássico da culinária da madrugada! Muito refinado! 🍜'
       },
       {
         text: 'Um banquete vitoriano que provavelmente está envenenado.',
         genres: ['Mistério', 'Terror'],
         typeScore: 'D',
+        reaction: 'Espero que você tenha um provador de comida real... 👑☠️'
       },
     ],
   },
@@ -269,21 +443,25 @@ const questions = [
         text: 'Pronto para combater o crime organizado ou alienígenas.',
         genres: ['Ação', 'Ficção Científica'],
         typeScore: 'A',
+        reaction: 'Equipe suas armas, a batalha já vai começar! 👽⚔️'
       },
       {
         text: 'Melodramático. Tudo me comove, até comercial de sabão em pó.',
         genres: ['Drama', 'Romance'],
         typeScore: 'B',
+        reaction: 'Um grande drama nos espera no final desse quiz! 🎭'
       },
       {
         text: 'Besta. Qualquer mosca voando me faz dar risadinha.',
         genres: ['Comédia', 'Animação'],
         typeScore: 'C',
+        reaction: 'Hahaha, mantenha esse sorriso no rosto! 🤪'
       },
       {
         text: 'Cético e desconfiado até da minha própria sombra.',
         genres: ['Suspense', 'Mistério', 'Terror'],
         typeScore: 'D',
+        reaction: 'Não confie em ninguém... nem mesmo nas minhas indicações! 🕵️'
       },
     ],
   },
@@ -307,12 +485,56 @@ const formatRating = (rating) => {
   return Number(rating).toFixed(1)
 }
 
-const answerQuestion = (genres, type) => {
-  genres.forEach((g) => {
+// Ao responder a pergunta, reage antes de avançar
+const answerQuestion = (option) => {
+  if (isTransitioning.value) return
+
+  // Adicionar pontuação
+  option.genres.forEach((g) => {
     genreScores.value[g] += 1
   })
-  typeScores.value[type] += 1
-  step.value += 1
+  typeScores.value[option.typeScore] += 1
+  
+  // Ativa reação e bloqueia novos cliques rápidos
+  genieReaction.value = option.reaction || 'Hum, interessante...'
+  isTransitioning.value = true
+
+  // Espera 1.6 segundos para mostrar o comentário e depois avança
+  setTimeout(() => {
+    step.value += 1
+    isTransitioning.value = false
+    genieReaction.value = ''
+
+    // Se o quiz terminou, dispara confete
+    if (step.value > totalSteps) {
+      dispararConfete()
+    }
+  }, 1600)
+}
+
+// Função de confete carregada via CDN online diretamente no navegador (evita erros do npm)
+const dispararConfete = async () => {
+  try {
+    if (!window.confetti) {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js'
+        script.onload = () => resolve(window.confetti)
+        script.onerror = reject
+        document.head.appendChild(script)
+      })
+    }
+    if (window.confetti) {
+      window.confetti({
+        particleCount: 150,
+        spread: 85,
+        origin: { y: 0.6 },
+        colors: ['#8a2be2', '#00f0ff', '#ff007f']
+      })
+    }
+  } catch (err) {
+    console.error('Erro ao disparar confetes:', err)
+  }
 }
 
 // Calculate results profile
@@ -355,26 +577,21 @@ const resultProfile = computed(() => {
 
 // Recommended movies based on preferred genres in the score
 const recommendedMovies = computed(() => {
-  // Sort genres by score
   const sortedGenres = Object.entries(genreScores.value)
     .filter((entry) => entry[1] > 0)
     .sort((a, b) => b[1] - a[1])
     .map((entry) => entry[0])
 
   if (sortedGenres.length === 0) {
-    // Return popular default
     return props.movies.slice(0, 3)
   }
 
-  // Filter movies that contain at least one of the top 3 scored genres
   const topGenres = sortedGenres.slice(0, 3)
 
-  // Find movies matching top genres
   const matches = props.movies.filter((movie) => {
     return movie.genres.some((g) => topGenres.includes(g))
   })
 
-  // Sort matched movies by rating desc, slice top 3
   return matches.sort((a, b) => b.rating - a.rating).slice(0, 3)
 })
 
@@ -385,6 +602,8 @@ const searchWhereToWatch = (movie) => {
 
 const resetQuiz = () => {
   step.value = 1
+  isTransitioning.value = false
+  genieReaction.value = ''
   for (const g in genreScores.value) {
     genreScores.value[g] = 0
   }
@@ -396,7 +615,7 @@ const resetQuiz = () => {
 
 <style lang="scss" scoped>
 .quiz-card {
-  max-width: 650px;
+  max-width: 750px; /* Aumentado ligeiramente para comportar o gênio ao lado no desktop */
   margin: 0 auto;
   border-radius: 24px;
 }
@@ -495,5 +714,86 @@ const resetQuiz = () => {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* === ESTILOS DO GÊNIO AKINATOR ROXO === */
+
+.genie-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.purple-genie {
+  animation: bobbing 4s ease-in-out infinite;
+  filter: drop-shadow(0 8px 16px rgba(138, 43, 226, 0.4));
+  transition: filter 0.4s ease;
+
+  &.thinking {
+    animation: bobbing 1.2s ease-in-out infinite; /* Balanço acelerado */
+    filter: drop-shadow(0 8px 24px rgba(0, 240, 255, 0.75)); /* Brilho Ciano ao pensar */
+  }
+
+  &.celebrating {
+    animation: bobbing 3s ease-in-out infinite, pulse-glow 2s infinite alternate;
+  }
+}
+
+@keyframes bobbing {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    filter: drop-shadow(0 8px 16px rgba(138, 43, 226, 0.4));
+  }
+  100% {
+    filter: drop-shadow(0 8px 24px rgba(0, 240, 255, 0.7));
+  }
+}
+
+/* === BALÃO DE FALA (SPEECH BUBBLE) === */
+
+.speech-bubble {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(138, 43, 226, 0.35);
+  border-radius: 20px;
+  padding: 16px 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: rgba(20, 15, 35, 0.98); /* Fundo escuro sólido para o balão */
+    border-left: 1px solid rgba(138, 43, 226, 0.35);
+    border-bottom: 1px solid rgba(138, 43, 226, 0.35);
+  }
+}
+
+/* Setas do Balão de Fala Dinâmicas */
+@media (min-width: 600px) {
+  .speech-bubble::before {
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+}
+
+@media (max-width: 599.99px) {
+  .speech-bubble::before {
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(135deg);
+  }
 }
 </style>

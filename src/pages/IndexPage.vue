@@ -457,8 +457,31 @@ const drawMovie = async () => {
 }
 
 // Land on selected movie
-const onSpinFinished = () => {
+const onSpinFinished = async () => {
   spinning.value = false
+  
+  // Dispara confete neon dinamicamente pelo navegador
+  try {
+    if (!window.confetti) {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js'
+        script.onload = () => resolve(window.confetti)
+        script.onerror = reject
+        document.head.appendChild(script)
+      })
+    }
+    if (window.confetti) {
+      window.confetti({
+        particleCount: 150,
+        spread: 85,
+        origin: { y: 0.6 },
+        colors: ['#8a2be2', '#00f0ff', '#ff007f']
+      })
+    }
+  } catch (err) {
+    console.error('Erro ao disparar confetes no sorteador:', err)
+  }
 }
 
 // Fetch and draw from TMDB discover API
