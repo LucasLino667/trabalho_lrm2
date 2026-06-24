@@ -22,7 +22,7 @@ export const movies = [
     genres: ['Ficção Científica', 'Drama', 'Aventura'],
     overview:
       'As reservas naturais da Terra estão se esgotando e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial.',
-    poster_path: '/gEU2QvH353eAGGo1754R23mmsYu.jpg',
+    poster_path: '/6ricSDD83BClJsFdGB6x7cM0MFQ.jpg',
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ export const movies = [
     genres: ['Ação', 'Ficção Científica', 'Suspense'],
     overview:
       'Dom Cobb é um ladrão que invade os sonhos das pessoas para roubar segredos do subconsciente. Agora ele tem a chance de redimir sua vida se conseguir realizar o inverso: plantar uma ideia na mente de alguém.',
-    poster_path: '/9gk7adHYeHCj0fs4Z8n4q88U20z.jpg',
+    poster_path: '/9e3Dz7aCANy5aRUQF745IlNloJ1.jpg',
   },
   {
     id: 3,
@@ -44,18 +44,18 @@ export const movies = [
     genres: ['Ação', 'Ficção Científica'],
     overview:
       'Um jovem programador de computador é atraído para um submundo cibernético sombrio, onde descobre que a realidade em que vive é uma simulação computadorizada criada por máquinas.',
-    poster_path: '/f89U3w7nAQUPsdjkeXgJA4ft2L3.jpg',
+    poster_path: '/lDqMDI3xpbB9UQRyeXfei0MXhqb.jpg',
   },
   {
     id: 4,
     title: 'Batman: O Cavaleiro das Trevas',
     type: 'movie',
     release_year: 2008,
-    rating: 9.0,
+    rating: 9,
     genres: ['Ação', 'Drama', 'Suspense'],
     overview:
       'Com a ajuda do tenente Jim Gordon e do promotor público Harvey Dent, Batman mantém a ordem em Gotham City até que um jovem criminoso anárquico conhecido como Coringa surja para instaurar o caos.',
-    poster_path: '/qJ2tWw2qIMc3fTPCwqJmCNqPEw7.jpg',
+    poster_path: '/4lj1ikfsSmMZNyfdi8R8Tv5tsgb.jpg',
   },
   {
     id: 5,
@@ -66,7 +66,7 @@ export const movies = [
     genres: ['Drama', 'Suspense', 'Comédia'],
     overview:
       'Toda a família de Ki-taek está desempregada, vivendo num porão sujo e apertado. Por obra do acaso, o filho adolescente começa a dar aulas de inglês a uma garota de uma família rica, dando início a uma série de eventos inesperados.',
-    poster_path: '/7IiTTwgch2nt2NsNxPRBBv0tJt6.jpg',
+    poster_path: '/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg',
   },
   {
     id: 6,
@@ -77,7 +77,7 @@ export const movies = [
     genres: ['Ação', 'Ficção Científica', 'Comédia', 'Aventura'],
     overview:
       'Uma imigrante chinesa idosa se envolve em uma aventura insana, onde ela sozinha precisa salvar o mundo explorando outros universos e se conectando com as vidas que ela poderia ter vivido.',
-    poster_path: '/w3Lw8tRBMBZGMM27ls5tc772nty.jpg',
+    poster_path: '/2dSZQGwijlXvMSyuGe0FSgrXnv0.jpg',
   },
   {
     id: 7,
@@ -88,7 +88,7 @@ export const movies = [
     genres: ['Animação', 'Ação', 'Aventura', 'Ficção Científica'],
     overview:
       'Miles Morales é um jovem negro do Brooklyn que se tornou o Homem-Aranha inspirado no legado do falecido Peter Parker. Mas ao abrir um portal multidimensional, ele encontra diferentes versões do herói de outras dimensões.',
-    poster_path: '/iiZZOWpm2e2Vrbf2UNw087uC0qg.jpg',
+    poster_path: '/gte2cJ3mtc2I8hZyXwRTzyclKuC.jpg',
   },
   {
     id: 8,
@@ -99,7 +99,7 @@ export const movies = [
     genres: ['Suspense', 'Mistério', 'Drama'],
     overview:
       'Nos anos 50, o xará Teddy Daniels investiga o desaparecimento de uma assassina que fugiu de um hospital psiquiátrico localizado em uma ilha isolada. No entanto, uma teia de conspirações e segredos faz ele duvidar de sua própria sanidade.',
-    poster_path: '/4oaPhb1cI3p1QZntwUuI2B07EwV.jpg',
+    poster_path: '/erl801HYIodoIBGZeFk0GTwCUBh.jpg',
   },
   {
     id: 9,
@@ -110,7 +110,7 @@ export const movies = [
     genres: ['Drama'],
     overview:
       'Um jovem baterista de jazz sonha em ser o melhor de sua geração. Ele entra para uma das melhores orquestras de conservatório sob a tutela de um maestro abusivo e implacável que não poupa agressões físicas ou verbais.',
-    poster_path: '/77A3F6U00jQvjE8G718eZc942G2.jpg',
+    poster_path: '/z693uKD7j3zcdX0zVMQPIA3cSZf.jpg',
   },
   {
     id: 10,
@@ -121,7 +121,7 @@ export const movies = [
     genres: ['Animação', 'Fantasia', 'Aventura'],
     overview:
       'Chihiro é uma garota de 10 anos que descobre um mundo secreto habitado por deuses, espíritos e feitiçaria, onde seus pais são transformados em porcos pela bruxa Yubaba.',
-    poster_path: '/39wmItIWsg5sclgU4yHUvSqltpw.jpg',
+    poster_path: '/ivHwYw3b03dFqRkcqaDSxjj2LQT.jpg',
   },
   {
     id: 11,
@@ -132,7 +132,7 @@ export const movies = [
     genres: ['Fantasia', 'Aventura', 'Ação'],
     overview:
       'Na Terra Média, o jovem hobbit Frodo Bolseiro recebe a missão de destruir o Um Anel, uma arma poderosa criada pelo Lorde das Trevas Sauron, antes que caia em mãos erradas.',
-    poster_path: '/6oom5Q55UP8m67l6H6Q1jT77169.jpg',
+    poster_path: '/tlvsNCwWEIgwAM23aNzTmMIcPEZ.jpg',
   },
   {
     id: 12,
@@ -143,7 +143,7 @@ export const movies = [
     genres: ['Drama', 'Suspense', 'Mistério'],
     overview:
       'Ao descobrir um câncer terminal, um pacato professor de química do ensino médio resolve fabricar e vender metanfetamina com um ex-aluno para garantir o futuro financeiro de sua família.',
-    poster_path: '/ztkUQj61i1ZXYB57o2o3Lhj56rR.jpg',
+    poster_path: '/hGwm9Cj3CdbJIqQWNExQqiYmCd4.jpg',
   },
   {
     id: 13,
@@ -154,7 +154,7 @@ export const movies = [
     genres: ['Ficção Científica', 'Drama', 'Suspense', 'Mistério'],
     overview:
       'Quando um garoto desaparece misteriosamente em uma pequena cidade de Indiana, seus amigos começam a investigar e encontram uma menina com superpoderes e uma conspiração governamental sobrenatural.',
-    poster_path: '/49WJfeN0mhmj3cntq7ah5G86e6G.jpg',
+    poster_path: '/twfKp60THrcOIep9sjHODOOfO8d.jpg',
   },
   {
     id: 14,
@@ -165,7 +165,7 @@ export const movies = [
     genres: ['Drama', 'Suspense'],
     overview:
       'Arthur Fleck trabalha como palhaço e vive isolado e ridicularizado pela sociedade de Gotham. Suas condições psicológicas se agravam progressivamente até que ele inicia uma onda de violência anárquica.',
-    poster_path: '/6t13ntjh1157V2YYB4j8v5e3JkP.jpg',
+    poster_path: '/xLxgVxFWvb9hhUyCDDXxRPPnFck.jpg',
   },
   {
     id: 15,
@@ -176,7 +176,7 @@ export const movies = [
     genres: ['Ficção Científica', 'Aventura', 'Drama'],
     overview:
       'Paul Atreides é um jovem brilhante nascido com um grande destino. Ele viaja para o planeta mais perigoso do universo para garantir o futuro de seu povo, enquanto forças malévolas disputam a substância mais preciosa da galáxia.',
-    poster_path: '/c58yX41AIn66lWpQG10712nC79z.jpg',
+    poster_path: '/uzERcfV2rSHNhW5eViQiO9hNiA7.jpg',
   },
   {
     id: 16,
@@ -187,7 +187,7 @@ export const movies = [
     genres: ['Ficção Científica', 'Aventura', 'Drama', 'Ação'],
     overview:
       'Paul Atreides se une a Chani e aos Fremen em busca de vingança contra os conspiradores que destruíram sua família. Enfrentando uma escolha entre o amor de sua vida e o destino do universo, ele tenta evitar um futuro terrível.',
-    poster_path: '/8cx4t7fB6Fj2hO6q7Z9a4g1m5b1.jpg',
+    poster_path: '/8LJJjLjAzAwXS40S5mx79PJ2jSs.jpg',
   },
   {
     id: 17,
@@ -198,7 +198,7 @@ export const movies = [
     genres: ['Suspense', 'Terror', 'Comédia'],
     overview:
       'Um casal viaja para uma ilha costeira para comer em um restaurante exclusivo, onde o chef preparou um menu luxuoso e farto, mas recheado de algumas surpresas chocantes e violentas.',
-    poster_path: '/536K25Vw00pQfQyJ22R29yGZ3pS.jpg',
+    poster_path: '/rxNelQvAjOmNGUUHRujmsHiPEIh.jpg',
   },
   {
     id: 18,
@@ -209,7 +209,7 @@ export const movies = [
     genres: ['Drama', 'Ficção Científica', 'Ação', 'Aventura'],
     overview:
       'Vinte anos após a destruição da civilização moderna por uma pandemia fúngica, Joel é contratado para contrabandear Ellie, uma garota de 14 anos que pode ser a chave para a cura, fora de uma zona de quarentena opressiva.',
-    poster_path: '/uKvHspzZc9jX5d1a8g7p2Y1aG5C.jpg',
+    poster_path: '/el1KQzwdIm17I3A6cYPfsVIWhfX.jpg',
   },
   {
     id: 19,
@@ -220,7 +220,7 @@ export const movies = [
     genres: ['Drama', 'Suspense', 'Ação'],
     overview:
       'Centenas de pessoas falidas aceitam um convite misterioso para competir em jogos infantis tradicionais. Lá dentro, um prêmio bilionário aguarda pelo vencedor, mas os jogos revelam-se mortais.',
-    poster_path: '/d33J9D0tJ31V45g4Q86Jq4H11qC.jpg',
+    poster_path: '/6gcHdboppvplmBWxvROc96NJnmm.jpg',
   },
   {
     id: 20,
@@ -231,7 +231,7 @@ export const movies = [
     genres: ['Drama'],
     overview:
       'Acompanhe a história da família Roy, dona de um dos maiores conglomerados de mídia do mundo, cujos filhos lutam pelo controle da empresa após a saúde do patriarca começar a declinar.',
-    poster_path: '/7E8n4w8jYxXyW98t2o3Lhj56rR.jpg',
+    poster_path: '/z0XiwdrCQ9yVIr4O0pxzaAYRxdW.jpg',
   },
   {
     id: 21,
@@ -242,7 +242,7 @@ export const movies = [
     genres: ['Terror', 'Drama', 'Mistério', 'Suspense'],
     overview:
       'No final do século XIX, dois faroleiros em uma ilha remota da Nova Inglaterra tentam manter a sanidade enquanto uma tempestade violenta os isola do mundo por semanas a fio.',
-    poster_path: '/2c8L2XJ2YyXyW98t2o3Lhj56rR.jpg',
+    poster_path: '/zdowK9GrOxK0YddhXuMPyxnTA02.jpg',
   },
   {
     id: 22,
@@ -253,7 +253,7 @@ export const movies = [
     genres: ['Terror', 'Mistério', 'Drama'],
     overview:
       'Na Nova Inglaterra da década de 1630, uma família puritana é expulsa de sua comunidade e passa a morar perto de uma floresta misteriosa. Eventos estranhos acontecem após o sumiço do bebê da família.',
-    poster_path: '/pL5G80pQfQyJ22R29yGZ3pS.jpg',
+    poster_path: '/qqOtwhj8DxOBIwI0u6ThooXEIBR.jpg',
   },
   {
     id: 23,
@@ -264,7 +264,7 @@ export const movies = [
     genres: ['Terror', 'Mistério', 'Drama'],
     overview:
       'Após a morte da avó matriarca da família Graham, sua filha e netos começam a descobrir segredos sombrios e cada vez mais aterrorizantes sobre sua ancestralidade, tentando escapar de um destino trágico.',
-    poster_path: '/egt1Ww2qIMc3fTPCwqJmCNqPEw7.jpg',
+    poster_path: '/wonYMeHauhrxSi5UTOtj5L479mS.jpg',
   },
   {
     id: 24,
@@ -275,7 +275,7 @@ export const movies = [
     genres: ['Suspense', 'Mistério', 'Terror'],
     overview:
       'Um jovem fotógrafo negro viaja no fim de semana para conhecer os pais de sua namorada branca. Inicialmente ele lê o comportamento excessivamente amigável da família como racismo velado, mas logo descobre algo sinistro.',
-    poster_path: '/4V25Vw00pQfQyJ22R29yGZ3pS.jpg',
+    poster_path: '/A0RoSZh8PEYJgDMgM2EV7Ycz3dR.jpg',
   },
   {
     id: 25,
@@ -286,7 +286,7 @@ export const movies = [
     genres: ['Terror', 'Drama', 'Mistério'],
     overview:
       'Um casal viaja com amigos para a Suécia para participar de um festival de verão lendário que ocorre a cada 90 anos. O que começa como férias tranquilas rapidamente se transforma em um pesadelo ritualístico de seita.',
-    poster_path: '/7x9W8vHspzZc9jX5d1a8g7p2Y1a.jpg',
+    poster_path: '/hR4dXPlWq5Nekwjqbp3gFGeiiZS.jpg',
   },
   {
     id: 26,
@@ -297,7 +297,7 @@ export const movies = [
     genres: ['Animação', 'Comédia', 'Fantasia', 'Drama'],
     overview:
       'Um professor de música que sonha em ser músico de jazz sofre um acidente no dia mais importante de sua vida. Sua alma é transportada para um centro onde as almas ganham personalidade antes de vir para a Terra.',
-    poster_path: '/hm525F6U00jQvjE8G718eZc942G2.jpg',
+    poster_path: '/1G7QNn1sUShae0Rf9k9D99wVFg5.jpg',
   },
   {
     id: 27,
@@ -308,7 +308,7 @@ export const movies = [
     genres: ['Animação', 'Drama', 'Romance', 'Fantasia'],
     overview:
       'Mitsuha, uma garota do campo, e Taki, um rapaz de Tóquio, descobrem de repente que trocam de corpo aleatoriamente durante o sono. Juntos, eles tentam descobrir o motivo e se encontrar no mundo real.',
-    poster_path: '/q7nd7QDQDQDQDQDQDQDQDQDQ.jpg',
+    poster_path: '/eIm2nKC0125GyEPSWl6ODCA9J1S.jpg',
   },
   {
     id: 28,
@@ -319,7 +319,7 @@ export const movies = [
     genres: ['Animação', 'Comédia', 'Família', 'Drama'],
     overview:
       'Dentro do cérebro de uma menina de 11 anos, as emoções Alegria, Tristeza, Medo, Raiva e Nojinho guiam a vida da garota enquanto ela tenta se adaptar a uma nova cidade e escola.',
-    poster_path: '/l9m2e2Vrbf2UNw087uC0qg.jpg',
+    poster_path: '/62SAZfLfzhxJWUFJvfIPMw6QUpE.jpg',
   },
   {
     id: 29,
@@ -330,18 +330,18 @@ export const movies = [
     genres: ['Comédia', 'Drama'],
     overview:
       'Uma mulher inteligente, sexualmente ativa e devastada pelo luto tenta lidar com a vida em Londres enquanto quebra constantemente a quarta parede para desabafar e fazer comentários irônicos com o público.',
-    poster_path: '/uV25Vw00pQfQyJ22R29yGZ3pS.jpg',
+    poster_path: '/27vEYsRKa3eAniwmoccOoluEXQ1.jpg',
   },
   {
     id: 30,
     title: 'The Office (US)',
     type: 'series',
     release_year: 2005,
-    rating: 9.0,
+    rating: 9,
     genres: ['Comédia'],
     overview:
       'Um documentário fictício sobre o cotidiano de funcionários de escritório de uma filial de papel em Scranton, liderados por Michael Scott, um chefe hilariamente sem noção e carente.',
-    poster_path: '/7EDQDQDQDQDQDQDQDQDQDQDQ.jpg',
+    poster_path: '/e7BoS8uUnew9ioS6reqtK9matqy.jpg',
   },
   {
     id: 31,
@@ -352,7 +352,7 @@ export const movies = [
     genres: ['Comédia'],
     overview:
       'Dois melhores amigos do ensino médio tentam comprar bebida alcoólica para impressionar as garotas em uma festa antes de irem para faculdades diferentes, mas a noite foge do controle em uma série de desventuras insanas.',
-    poster_path: '/uV3F6U00jQvjE8G718eZc942G2.jpg',
+    poster_path: '/rABcQMa8m67EJslknSlMfE3BP8L.jpg',
   },
   {
     id: 32,
@@ -363,18 +363,18 @@ export const movies = [
     genres: ['Comédia'],
     overview:
       'Três amigos acordam em uma suíte de Las Vegas sem qualquer memória da noite anterior, um tigre no banheiro, um bebê no armário e, pior de tudo, o noivo cujo casamento acontece no dia seguinte desapareceu.',
-    poster_path: '/l9m2e2Vrbf2UNw087uC0qg.jpg',
+    poster_path: '/m0tQyMdp3fy5ooUOQkJMd1fQKBJ.jpg',
   },
   {
     id: 33,
     title: 'Como Perder um Homem em 10 Dias',
     type: 'movie',
     release_year: 2003,
-    rating: 7.0,
+    rating: 7,
     genres: ['Romance', 'Comédia'],
     overview:
       'Uma jornalista decide escrever uma coluna sobre como afastar um homem em 10 dias. Ela escolhe um publicitário confiante como cobaia, mas ele fez uma aposta oposta: fazer qualquer mulher se apaixonar por ele no mesmo período.',
-    poster_path: '/uV3F6U00jQvjE8G718eZc942G2.jpg',
+    poster_path: '/qxwgxjFUtZ3qf7vib9na6tdPfwT.jpg',
   },
   {
     id: 34,
@@ -385,7 +385,7 @@ export const movies = [
     genres: ['Romance', 'Drama'],
     overview:
       'Um pianista de jazz idealista e uma atriz aspirante se apaixonam em Los Angeles enquanto perseguem seus sonhos de sucesso na carreira artística, precisando escolher entre suas ambições e o relacionamento.',
-    poster_path: '/uV3F6U00jQvjE8G718eZc942G2.jpg',
+    poster_path: '/AvMietG6xuobpSSdmVnKuTjv4bL.jpg',
   },
   {
     id: 35,
@@ -396,18 +396,18 @@ export const movies = [
     genres: ['Romance', 'Drama', 'Fantasia', 'Ficção Científica'],
     overview:
       'Ao completar 21 anos, Tim descobre que todos os homens de sua família têm a habilidade secreta de viajar no tempo para momentos que já viveram. Ele decide usar o dom para conseguir uma namorada e melhorar sua vida.',
-    poster_path: '/uV3F6U00jQvjE8G718eZc942G2.jpg',
+    poster_path: '/uqEzxvGDYNzoQE7rayv7gRXBomt.jpg',
   },
   {
     id: 36,
     title: 'Antes do Amanhecer',
     type: 'movie',
     release_year: 1995,
-    rating: 8.0,
+    rating: 8,
     genres: ['Romance', 'Drama'],
     overview:
       'Um jovem americano e uma estudante francesa se conhecem por acaso em um trem na Europa e decidem descer juntos em Viena, passando a noite caminhando pela cidade e conversando sobre a vida e o amor antes do amanhecer.',
-    poster_path: '/uV3F6U00jQvjE8G718eZc942G2.jpg',
+    poster_path: '/gUD2xpkiWaCUabnwMgopECylsKc.jpg',
   },
   {
     id: 37,
@@ -418,7 +418,7 @@ export const movies = [
     genres: ['Drama', 'Suspense'],
     overview:
       'O envelhecido patriarca de uma dinastia do crime organizado em Nova York transfere o controle de seu império clandestino para seu filho relutante, iniciando um ciclo violento de traição e poder.',
-    poster_path: '/3bhkrj6PjMMJ37ic9XxNU31TehZ.jpg',
+    poster_path: '/oJagOzBu9Rdd9BrciseCm3U3MCU.jpg',
   },
   {
     id: 38,
@@ -429,7 +429,7 @@ export const movies = [
     genres: ['Drama', 'Suspense'],
     overview:
       'Um homem deprimido sofrendo de insônia conhece um vendedor de sabão excêntrico chamado Tyler Durden. Juntos, eles criam uma organização de lutas clandestinas que evolui para uma anarquia revolucionária.',
-    poster_path: '/bptfe1g8t7o15Pvs6Zg5slgU4yH.jpg',
+    poster_path: '/mCICnh7QBH0gzYaTQChBDDVIKdm.jpg',
   },
   {
     id: 39,
@@ -440,7 +440,7 @@ export const movies = [
     genres: ['Thriller', 'Suspense', 'Drama'],
     overview:
       'As vidas de dois assassinos profissionais, uma esposa de gângster, um boxeador fracassado e dois ladrões de lanchonete se cruzam de forma não linear em uma série de incidentes bizarros e violentos.',
-    poster_path: '/d5iIlvfjmjeI0xS7JzRM5JIfjCW.jpg',
+    poster_path: '/tptjnB2LDbuUWya9Cx5sQtv5hqb.jpg',
   },
   {
     id: 40,
@@ -451,7 +451,7 @@ export const movies = [
     genres: ['Drama', 'Suspense'],
     overview:
       'Buscapé é um jovem pobre e sensível que cresce na violenta favela da Cidade de Deus, no Rio de Janeiro. Ele documenta através de suas fotos a ascensão de Zé Pequeno como chefe do tráfico local.',
-    poster_path: '/k723Vm9v9v9v9v9v9v9v9v9v9v.jpg',
+    poster_path: '/gfnXixcGC060QcG6JPxN6AMdVsq.jpg',
   },
   {
     id: 41,
@@ -462,18 +462,18 @@ export const movies = [
     genres: ['Terror', 'Suspense'],
     overview:
       'Um escritor aceita um emprego como zelador de inverno em um hotel isolado nas montanhas do Colorado. Junto com sua esposa e filho pequeno, ele é influenciado por forças sobrenaturais malignas do local.',
-    poster_path: '/9g5slgU4yHUvSqltpw39wmItIWsg.jpg',
+    poster_path: '/47BdQqDWnj3VIzpH9bd2agho2PN.jpg',
   },
   {
     id: 42,
     title: 'Blade Runner 2049',
     type: 'movie',
     release_year: 2017,
-    rating: 8.0,
+    rating: 8,
     genres: ['Ficção Científica', 'Drama', 'Mistério'],
     overview:
       'Um jovem caçador de replicantes da polícia de Los Angeles descobre um segredo há muito tempo enterrado que tem o potencial de mergulhar o que resta da sociedade no caos absoluto.',
-    poster_path: '/gVc1tWw2qIMc3fTPCwqJmCNqPEw7.jpg',
+    poster_path: '/49pANIZXRAdHUiWjjBv4vxPeqRC.jpg',
   },
   {
     id: 43,
@@ -484,7 +484,7 @@ export const movies = [
     genres: ['Suspense', 'Mistério', 'Drama'],
     overview:
       'Uma jovem cadete do FBI pede ajuda ao brilhante e psicopático assassino canibal Dr. Hannibal Lecter para conseguir capturar outro serial killer ativo que está esfolando jovens mulheres.',
-    poster_path: '/uV3F6U00jQvjE8G718eZc942G2.jpg',
+    poster_path: '/9IflTrxN8yw44ZxhfvJPziGzGHM.jpg',
   },
   {
     id: 44,
@@ -495,7 +495,7 @@ export const movies = [
     genres: ['Ação', 'Ficção Científica', 'Aventura'],
     overview:
       'Em um mundo pós-apocalíptico desértico, a guerreira Imperatriz Furiosa lidera uma rebelião contra o tirano Immortan Joe, fugindo em um caminhão de guerra gigante com a ajuda do ex-prisioneiro Max Rockatansky.',
-    poster_path: '/8eyJ8vHspzZc9jX5d1a8g7p2Y1aG.jpg',
+    poster_path: '/tH64gzAHDFg7EFcgfkkZyHdGM5P.jpg',
   },
   {
     id: 45,
@@ -506,7 +506,7 @@ export const movies = [
     genres: ['Ação', 'Ficção Científica', 'Aventura', 'Comédia'],
     overview:
       'Um aventureiro espacial se une a um grupo de desajustados alienígenas fugitivos de uma prisão galáctica para impedir que um fanático poderoso destrua o universo usando uma joia mística.',
-    poster_path: '/39wmItIWsg5sclgU4yHUvSqltpw.jpg',
+    poster_path: '/xaY92XMToaSnBuvCui3LHzNGqZB.jpg',
   },
   {
     id: 46,
@@ -517,7 +517,7 @@ export const movies = [
     genres: ['Terror', 'Mistério', 'Suspense'],
     overview:
       'Os investigadores paranormais Ed e Lorraine Warren trabalham para ajudar uma família aterrorizada por uma presença sombria e demoníaca em sua recém-comprada fazenda isolada.',
-    poster_path: '/pL5G80pQfQyJ22R29yGZ3pS.jpg',
+    poster_path: '/1NxHKZW5DPbUFtbF3MxbdSyxRqU.jpg',
   },
   {
     id: 47,
@@ -528,18 +528,18 @@ export const movies = [
     genres: ['Animação', 'Comédia', 'Família', 'Fantasia'],
     overview:
       'Um rato parisiense com um paladar sofisticado faz uma aliança incomum com um jovem ajudante de cozinha desajeitado para cozinhar secretamente em um renomado restaurante de alta gastronomia.',
-    poster_path: '/l9m2e2Vrbf2UNw087uC0qg.jpg',
+    poster_path: '/41Co0TRUJNyvjr2vHBEcAKAEFpX.jpg',
   },
   {
     id: 48,
     title: 'Os Incríveis',
     type: 'movie',
     release_year: 2004,
-    rating: 8.0,
+    rating: 8,
     genres: ['Animação', 'Ação', 'Aventura', 'Família'],
     overview:
       'Uma família de super-heróis aposentados que vive sob identidades civis secretas no subúrbio é forçada a voltar à ativa quando o pai cai em uma armadilha misteriosa em uma ilha isolada.',
-    poster_path: '/39wmItIWsg5sclgU4yHUvSqltpw.jpg',
+    poster_path: '/z8k5EhZZTLsCRF8NWjSe6snWNZg.jpg',
   },
   {
     id: 49,
@@ -550,7 +550,7 @@ export const movies = [
     genres: ['Ficção Científica', 'Mistério', 'Drama', 'Suspense'],
     overview:
       'O desaparecimento de duas crianças em uma cidade alemã cercada por uma usina nuclear expõe segredos obscuros e conexões temporais complexas entre quatro famílias ao longo de três gerações.',
-    poster_path: '/apbrQjC9jX5d1a8g7p2Y1aG5C.jpg',
+    poster_path: '/7yQyDCqSazrYTnmxdQLAZ8YDH87.jpg',
   },
   {
     id: 50,
@@ -561,7 +561,7 @@ export const movies = [
     genres: ['Mistério', 'Ficção Científica', 'Drama', 'Suspense'],
     overview:
       'Funcionários de uma misteriosa corporação passam por um procedimento cirúrgico que separa suas memórias pessoais das profissionais. Quando no trabalho, não lembram de nada de fora, e vice-versa.',
-    poster_path: '/abjX5d1a8g7p2Y1aG5CapbrQjC.jpg',
+    poster_path: '/3DjOAUBR8Hra4R9kK9U8jDaoqyC.jpg',
   },
   {
     id: 51,
@@ -572,7 +572,7 @@ export const movies = [
     genres: ['Drama', 'Comédia'],
     overview:
       'Carmy, um jovem chef refinado do mundo da alta gastronomia, volta a Chicago após o suicídio do irmão para administrar a lanchonete de sanduíches italiana decadente de sua família.',
-    poster_path: '/uKvHspzZc9jX5d1a8g7p2Y1aG5C.jpg',
+    poster_path: '/tAJYUFaWot3jn5vtDUoxNNIw9aF.jpg',
   },
   {
     id: 52,
@@ -583,7 +583,7 @@ export const movies = [
     genres: ['Fantasia', 'Drama', 'Ação', 'Aventura'],
     overview:
       'Situada 200 anos antes dos eventos de Game of Thrones, esta série acompanha a ascensão e a devastadora guerra civil da Casa Targaryen pelo controle do Trono de Ferro de Westeros.',
-    poster_path: '/z2yXyW98t2o3Lhj56rR7E8n4w8j.jpg',
+    poster_path: '/xEC4nyJvcWcOu7QaobLcqz6iRUL.jpg',
   },
   {
     id: 53,
@@ -594,7 +594,7 @@ export const movies = [
     genres: ['Animação', 'Ação', 'Ficção Científica', 'Fantasia', 'Drama'],
     overview:
       'A humanidade vive isolada em cidades cercadas por três muralhas gigantescas para se proteger de Titãs devoradores de homens. Eren Jaeger jura vingança após perder sua mãe em uma invasão.',
-    poster_path: '/h8QDQDQDQDQDQDQDQDQDQDQDQ.jpg',
+    poster_path: '/8aMqmB5xSblsZc7bLMEhE28yHa2.jpg',
   },
   {
     id: 54,
@@ -605,7 +605,7 @@ export const movies = [
     genres: ['Animação', 'Comédia', 'Família', 'Fantasia'],
     overview:
       'Na cidade dos monstros, a maior fábrica de energia depende dos gritos de crianças assustadas por monstros profissionais. Mas tudo muda quando uma garotinha humana acidentalmente entra na fábrica.',
-    poster_path: '/l9m2e2Vrbf2UNw087uC0qg.jpg',
+    poster_path: '/5p6cdAeUevsLOX0oI1T4JIul4QO.jpg',
   },
   {
     id: 55,
@@ -616,7 +616,7 @@ export const movies = [
     genres: ['Drama', 'Crime', 'Suspense', 'Terror'],
     overview:
       'A história do notório serial killer Jeffrey Dahmer, analisada a partir do ponto de vista de suas vítimas, da incompetência policial e do racismo sistêmico que permitiram que ele atuasse por mais de uma década.',
-    poster_path: '/apbrQjC9jX5d1a8g7p2Y1aG5C.jpg',
+    poster_path: '/67ujv4O6AalmGu3UaVSNdcw8juT.jpg',
   },
   {
     id: 56,
@@ -627,7 +627,7 @@ export const movies = [
     genres: ['Terror', 'Drama', 'Suspense'],
     overview:
       'Presa na fazenda isolada de sua família sob a vigilância severa de sua mãe devota, a jovem Pearl anseia por uma vida glamourosa como estrela de cinema, recorrendo a atos brutais sob a influência de sua obsessão.',
-    poster_path: '/e1Ww2qIMc3fTPCwqJmCNqPEw7egt.jpg',
+    poster_path: '/y8A0Cvp8WQmZ3bjbnsL53lY0dsC.jpg',
   },
   {
     id: 57,
@@ -638,7 +638,7 @@ export const movies = [
     genres: ['Terror', 'Suspense', 'Mistério'],
     overview:
       'Em 1979, um grupo de jovens cineastas viaja para uma fazenda rural no Texas para gravar um filme adulto secreto. Quando os proprietários idosos descobrem o plano, o grupo precisa lutar por suas vidas à noite.',
-    poster_path: '/pL5G80pQfQyJ22R29yGZ3pS.jpg',
+    poster_path: '/4BarWJRYFB5fN7LsJI9U2ul79hB.jpg',
   },
   {
     id: 58,
@@ -649,7 +649,7 @@ export const movies = [
     genres: ['Ação', 'Ficção Científica', 'Aventura', 'Suspense'],
     overview:
       'Em uma nação pós-apocalíptica autoritária, Katniss Everdeen se voluntaria para substituir sua irmã mais nova em um evento anual televisivo violento, no qual jovens lutam até a morte na arena.',
-    poster_path: '/8eyJ8vHspzZc9jX5d1a8g7p2Y1aG.jpg',
+    poster_path: '/l6jn53LMu07uPt8A42JWIKi1Beb.jpg',
   },
   {
     id: 59,
@@ -660,7 +660,7 @@ export const movies = [
     genres: ['Ação', 'Drama', 'Aventura'],
     overview:
       'Um ex-general romano jura vingança contra o imperador corrupto Commodus que assassinou sua família e o sentenciou à escravidão, lutando nas arenas de gladiadores até chegar ao Coliseu de Roma.',
-    poster_path: '/3bhkrj6PjMMJ37ic9XxNU31TehZ.jpg',
+    poster_path: '/4DUClyGA6OqjXv6yC0Imf6THGfp.jpg',
   },
   {
     id: 60,
@@ -671,7 +671,7 @@ export const movies = [
     genres: ['Ação', 'Ficção Científica', 'Aventura'],
     overview:
       'Após Thanos dizimar metade de toda a vida no universo, os heróis sobreviventes da Terra precisam se reunir novamente para tentar reverter a tragédia e restaurar a ordem na galáxia.',
-    poster_path: '/iiZZOWpm2e2Vrbf2UNw087uC0qg.jpg',
+    poster_path: '/9fRX8UKlIW7Lb9GqNsJVakWWFCi.jpg',
   },
   {
     id: 61,
@@ -682,7 +682,7 @@ export const movies = [
     genres: ['Ação', 'Ficção Científica', 'Aventura'],
     overview:
       'Os Vingadores e seus aliados espaciais precisam estar dispostos a sacrificar tudo em uma tentativa de derrotar o poderoso Thanos antes que sua blitz de devastação e ruína ponha um fim ao universo.',
-    poster_path: '/iiZZOWpm2e2Vrbf2UNw087uC0qg.jpg',
+    poster_path: '/A4kvp7vY1BDLrrQIagRCffLKj1t.jpg',
   },
   {
     id: 62,
@@ -693,7 +693,7 @@ export const movies = [
     genres: ['Ação', 'Drama'],
     overview:
       'Após mais de trinta anos de serviço como um dos melhores aviadores da Marinha, Pete Mitchell é encarregado de treinar um destacamento de graduados do Top Gun para uma missão especializada perigosa.',
-    poster_path: '/8eyJ8vHspzZc9jX5d1a8g7p2Y1aG.jpg',
+    poster_path: '/kPbuLGVSJHATkW9fX9L3h1wM0Pa.jpg',
   },
   {
     id: 63,
@@ -704,7 +704,7 @@ export const movies = [
     genres: ['Ação', 'Drama', 'Mistério', 'Suspense'],
     overview:
       'Em seu segundo ano de combate ao crime em Gotham, Batman investiga a corrupção na cidade que se conecta à sua própria família, enquanto persegue o Charada, um assassino em série sádico que deixa pistas enigmáticas.',
-    poster_path: '/gVc1tWw2qIMc3fTPCwqJmCNqPEw7.jpg',
+    poster_path: '/wd7b4Nv9QBHDTIjc2m7sr0IUMoh.jpg',
   },
   {
     id: 64,
@@ -715,18 +715,18 @@ export const movies = [
     genres: ['Ficção Científica', 'Aventura', 'Ação'],
     overview:
       'Jake Sully e Neytiri formaram uma família em Pandora, mas são forçados a deixar seu lar na floresta e buscar refúgio em outras regiões aquáticas de Pandora quando uma ameaça familiar retorna para terminar o que começou.',
-    poster_path: '/8eyJ8vHspzZc9jX5d1a8g7p2Y1aG.jpg',
+    poster_path: '/hm6nONQOgVpKmRK5YUX9EqfJ0NH.jpg',
   },
   {
     id: 65,
     title: 'Kill Bill: Volume 1',
     type: 'movie',
     release_year: 2003,
-    rating: 8.0,
+    rating: 8,
     genres: ['Ação', 'Suspense'],
     overview:
       'Uma ex-assassina grávida entra em coma por quatro anos após seu ex-chefe Bill e seus comparsas tentarem assassiná-la no dia de seu ensaio de casamento. Ao acordar, ela busca vingança implacável contra todos.',
-    poster_path: '/d5iIlvfjmjeI0xS7JzRM5JIfjCW.jpg',
+    poster_path: '/6VDrtm6rLEW4hByVA45V0Gpime0.jpg',
   },
   {
     id: 66,
@@ -737,7 +737,7 @@ export const movies = [
     genres: ['Ação', 'Drama', 'Suspense'],
     overview:
       'Na França ocupada pelos nazistas, um grupo de soldados judeus americanos espalha o terror matando e escalpelando soldados alemães, enquanto planejam o assassinato dos principais líderes nazistas em um cinema parisiense.',
-    poster_path: '/d5iIlvfjmjeI0xS7JzRM5JIfjCW.jpg',
+    poster_path: '/fM7cHZc9WK9yU47kiiyMS4tW0uw.jpg',
   },
   {
     id: 67,
@@ -748,7 +748,7 @@ export const movies = [
     genres: ['Drama', 'Aventura', 'Ação'],
     overview:
       'Com a ajuda de um caçador de recompensas alemão excêntrico, o escravo liberto Django viaja pelo sul dos Estados Unidos para resgatar sua esposa das garras de um proprietário de fazenda cruel e extravagante.',
-    poster_path: '/d5iIlvfjmjeI0xS7JzRM5JIfjCW.jpg',
+    poster_path: '/ar63Sx8jeqk0OOu2uchS477S2zE.jpg',
   },
   {
     id: 68,
@@ -759,18 +759,18 @@ export const movies = [
     genres: ['Drama', 'Suspense', 'Comédia'],
     overview:
       'Acompanhe a tensa relação entre duas famílias sul-coreanas de classes sociais opostas que se misturam após o filho da família pobre arrumar um emprego na mansão dos ricos.',
-    poster_path: '/7IiTTwgch2nt2NsNxPRBBv0tJt6.jpg',
+    poster_path: '/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg',
   },
   {
     id: 69,
     title: 'O Lobo de Wall Street',
     type: 'movie',
     release_year: 2013,
-    rating: 8.0,
+    rating: 8,
     genres: ['Drama', 'Comédia'],
     overview:
       'Baseado na história real de Jordan Belfort, um corretor de ações nova-iorquino ambicioso que constrói um império financeiro fraudulento na bolsa de valores, vivendo de forma hedonista até a intervenção do FBI.',
-    poster_path: '/4oaPhb1cI3p1QZntwUuI2B07EwV.jpg',
+    poster_path: '/sIy0jXDkaMf3SDZGaWcmkC2IOl.jpg',
   },
   {
     id: 70,
@@ -781,7 +781,7 @@ export const movies = [
     genres: ['Suspense', 'Mistério', 'Drama'],
     overview:
       'No dia do seu quinto aniversário de casamento, Nick Dunne relata que sua esposa Amy desapareceu misteriosamente. Sob pressão policial e frenesi da mídia, a imagem de casamento feliz desmorona e Nick vira suspeito.',
-    poster_path: '/4oaPhb1cI3p1QZntwUuI2B07EwV.jpg',
+    poster_path: '/54nI3vSKlPp42WhJmKVRdmMbkzl.jpg',
   },
   {
     id: 71,
@@ -792,7 +792,7 @@ export const movies = [
     genres: ['Suspense', 'Mistério', 'Drama'],
     overview:
       'Dois detetives de polícia, um jovem impaciente e um veterano prestes a se aposentar, caçam um serial killer meticuloso e obsessivo cujos crimes são inspirados nos sete pecados capitais.',
-    poster_path: '/4oaPhb1cI3p1QZntwUuI2B07EwV.jpg',
+    poster_path: '/dZXYPSEaXCeigR2GEuZoukNmLTf.jpg',
   },
   {
     id: 72,
@@ -803,7 +803,7 @@ export const movies = [
     genres: ['Suspense', 'Drama', 'Comédia'],
     overview:
       'Um rico banqueiro de investimentos de Nova York esconde seu ego e tendências psicopáticas violentas sob uma máscara de conformidade impecável, enquanto comete assassinatos brutais e bizarros à noite.',
-    poster_path: '/4oaPhb1cI3p1QZntwUuI2B07EwV.jpg',
+    poster_path: '/4AiFo2MwU62mTtuZ7VH16tlZcmo.jpg',
   },
   {
     id: 73,
@@ -814,7 +814,7 @@ export const movies = [
     genres: ['Suspense', 'Mistério', 'Drama'],
     overview:
       'A história real da caçada obsessiva de cartunistas, jornalistas e detetives de São Francisco pelo infame Assassino do Zodíaco, um serial killer que enviava cartas e enigmas provocativos para os jornais.',
-    poster_path: '/4oaPhb1cI3p1QZntwUuI2B07EwV.jpg',
+    poster_path: '/jFmlV5vUzOt1PgJ82efOhNsWcWX.jpg',
   },
   {
     id: 74,
@@ -825,7 +825,7 @@ export const movies = [
     genres: ['Suspense', 'Mistério', 'Drama', 'Fantasia'],
     overview:
       'Na Londres do final do século XIX, dois mágicos de palco outrora parceiros tornam-se rivais ferrenhos após uma tragédia, travando uma batalha obsessiva de autossabotagem e segredos perigosos.',
-    poster_path: '/9gk7adHYeHCj0fs4Z8n4q88U20z.jpg',
+    poster_path: '/4AUW2bGbQjWACUREckGJWXmyF0d.jpg',
   },
   {
     id: 75,
@@ -836,7 +836,7 @@ export const movies = [
     genres: ['Suspense', 'Mistério', 'Drama', 'Terror'],
     overview:
       'Um psicólogo infantil tenta ajudar um garoto assustado de oito anos que afirma ver e se comunicar com pessoas mortas que não sabem que já faleceram.',
-    poster_path: '/9gk7adHYeHCj0fs4Z8n4q88U20z.jpg',
+    poster_path: '/ds7jw0WYCd6k7hBzMnzgFsTfg96.jpg',
   },
   {
     id: 76,
@@ -847,7 +847,7 @@ export const movies = [
     genres: ['Drama', 'Mistério'],
     overview:
       'A dramatização detalhada do desastre nuclear soviético de 1986, focando nos cientistas, bombeiros e operários que sacrificaram suas vidas para conter a radiação e expor a verdade sobre a catástrofe.',
-    poster_path: '/apbrQjC9jX5d1a8g7p2Y1aG5C.jpg',
+    poster_path: '/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg',
   },
   {
     id: 77,
@@ -858,7 +858,7 @@ export const movies = [
     genres: ['Ação', 'Ficção Científica', 'Drama', 'Comédia'],
     overview:
       "Em um mundo onde super-heróis agem como celebridades e abusam de seus poderes sob uma corporação corrupta, um grupo de humanos vigilantes se reúne para expor a verdade sobre a equipe de elite 'Os Sete'.",
-    poster_path: '/ztkUQj61i1ZXYB57o2o3Lhj56rR.jpg',
+    poster_path: '/in1R2dDc421JxsoRWaIIAqVI2KE.jpg',
   },
   {
     id: 78,
@@ -869,7 +869,7 @@ export const movies = [
     genres: ['Animação', 'Ficção Científica', 'Comédia', 'Aventura'],
     overview:
       'Acompanhe as aventuras espaciais e interdimensionais hilárias e ultrajantes do cientista brilhante e niilista Rick Sanchez junto com seu neto ingênuo e assustadiço Morty.',
-    poster_path: '/h8QDQDQDQDQDQDQDQDQDQDQDQ.jpg',
+    poster_path: '/5qfd0e2uMbVInX3YdeFbDsfxi1t.jpg',
   },
   {
     id: 79,
@@ -880,7 +880,7 @@ export const movies = [
     genres: ['Animação', 'Drama', 'Comédia'],
     overview:
       'A história de um cavalo antropomórfico, ex-estrela de uma sitcom dos anos 90, que lida com a depressão, dependência química e relacionamentos tóxicos em Hollywood enquanto tenta relançar sua carreira.',
-    poster_path: '/h8QDQDQDQDQDQDQDQDQDQDQDQ.jpg',
+    poster_path: '/6JFWzlChcGgLiIUo2COgNlWGFKy.jpg',
   },
   {
     id: 80,
@@ -891,7 +891,7 @@ export const movies = [
     genres: ['Ficção Científica', 'Suspense', 'Drama', 'Mistério'],
     overview:
       'Esta antologia explora o lado sombrio da tecnologia moderna e seu impacto na sociedade e na psicologia humana, mostrando futuros distópicos inquietantes e satíricos.',
-    poster_path: '/apbrQjC9jX5d1a8g7p2Y1aG5C.jpg',
+    poster_path: '/aCTL24B8ZuiI2osMwoUI5rqBXoF.jpg',
   },
   {
     id: 81,
@@ -902,7 +902,7 @@ export const movies = [
     genres: ['Comédia', 'Drama'],
     overview:
       'Um carismático técnico de futebol americano universitário é inesperadamente contratado para treinar um time de futebol profissional da Premier League na Inglaterra, apesar de não ter experiência no esporte.',
-    poster_path: '/uKvHspzZc9jX5d1a8g7p2Y1aG5C.jpg',
+    poster_path: '/5fhZdwP1DVJ0FyVH6vrFdHwpXIn.jpg',
   },
   {
     id: 82,
@@ -913,7 +913,7 @@ export const movies = [
     genres: ['Drama', 'Comédia', 'Ficção Científica'],
     overview:
       'Um corretor de seguros descobre gradualmente que toda a sua pacata vida suburbana na verdade é um reality show de TV transmitido globalmente 24 horas por dia, no qual todos os seus conhecidos são atores.',
-    poster_path: '/9gk7adHYeHCj0fs4Z8n4q88U20z.jpg',
+    poster_path: '/3mEoGWyJCZTSoYyjFD3gFd6hzU4.jpg',
   },
   {
     id: 83,
@@ -924,7 +924,7 @@ export const movies = [
     genres: ['Romance', 'Drama', 'Ficção Científica'],
     overview:
       'Um casal separado resolve se submeter a um tratamento clínico inovador para apagar cirurgicamente todas as memórias mútuas de seu relacionamento doloroso.',
-    poster_path: '/uV3F6U00jQvjE8G718eZc942G2.jpg',
+    poster_path: '/zqbwK2ugTPauBQwzcNAM3PxVoww.jpg',
   },
   {
     id: 84,
@@ -935,7 +935,7 @@ export const movies = [
     genres: ['Romance', 'Drama'],
     overview:
       'Na Inglaterra georgiana rural, a forte e independente Elizabeth Bennet enfrenta dilemas de casamento, diferenças de classe e o orgulho do aristocrata enigmático Sr. Darcy.',
-    poster_path: '/uV3F6U00jQvjE8G718eZc942G2.jpg',
+    poster_path: '/dmnY0Zs8uMSHkMiol7M3xOlvvkK.jpg',
   },
   {
     id: 85,
@@ -946,7 +946,7 @@ export const movies = [
     genres: ['Romance', 'Comédia', 'Drama'],
     overview:
       'Acompanhe as vidas entrelaçadas de oito casais muito diferentes em Londres que tentam lidar com seus relacionamentos amorosos no mês que antecede o Natal.',
-    poster_path: '/uV3F6U00jQvjE8G718eZc942G2.jpg',
+    poster_path: '/zoZvqAlIt6U8XWyo2ROU2SpTVAc.jpg',
   },
   {
     id: 86,
@@ -957,18 +957,18 @@ export const movies = [
     genres: ['Drama'],
     overview:
       'Um traficante de drogas de Nova York vive suas últimas 24 horas de liberdade antes de iniciar uma sentença de sete anos de prisão, despedindo-se de seus amigos e namorada enquanto reavalia sua vida.',
-    poster_path: '/3bhkrj6PjMMJ37ic9XxNU31TehZ.jpg',
+    poster_path: '/vdy4JZ2mVXEPTwTnPbAQJwopWu5.jpg',
   },
   {
     id: 87,
     title: 'WALL·E',
     type: 'movie',
     release_year: 2008,
-    rating: 8.0,
+    rating: 8,
     genres: ['Animação', 'Ficção Científica', 'Família', 'Aventura'],
     overview:
       'No futuro distante, um pequeno robô compactador de lixo deixado para trás na Terra desabitada se apaixona por uma sonda robótica avançada chamada Eva, seguindo-a em uma jornada pelo espaço sideral.',
-    poster_path: '/l9m2e2Vrbf2UNw087uC0qg.jpg',
+    poster_path: '/qNiwJPVCO4cgiM8LVtxwPV2HxHS.jpg',
   },
   {
     id: 88,
@@ -979,7 +979,7 @@ export const movies = [
     genres: ['Animação', 'Aventura', 'Fantasia', 'Família'],
     overview:
       'Um jovem viking magricela que vive em uma ilha atormentada por dragões tenta provar seu valor capturando um dragão lendário da espécie Fúria da Noite, mas acaba virando amigo dele.',
-    poster_path: '/l9m2e2Vrbf2UNw087uC0qg.jpg',
+    poster_path: '/vdvEClt3J8sFWxyMo0Jm7JpouEo.jpg',
   },
   {
     id: 89,
@@ -990,7 +990,7 @@ export const movies = [
     genres: ['Terror', 'Drama', 'Ficção Científica'],
     overview:
       'Uma investigadora do CDC viaja para uma pequena cidade da Louisiana para conter um surto mortal transmitido por pântano, descobrindo segredos místicos e um monstro vegetal.',
-    poster_path: '/apbrQjC9jX5d1a8g7p2Y1aG5C.jpg',
+    poster_path: '/sWv8T2WlSrmssqQ4egi9oE4g237.jpg',
   },
   {
     id: 90,
@@ -1001,7 +1001,7 @@ export const movies = [
     genres: ['Terror', 'Suspense', 'Mistério'],
     overview:
       'Uma estudante do ensino médio torna-se alvo de um assassino mascarado obcecado por regras de filmes de terror que está aterrorizando sua pequena cidade costeira na Califórnia.',
-    poster_path: '/pL5G80pQfQyJ22R29yGZ3pS.jpg',
+    poster_path: '/rEevavl5vebCVEd5imx7D1k8nmV.jpg',
   },
   {
     id: 91,
@@ -1012,7 +1012,7 @@ export const movies = [
     genres: ['Terror', 'Drama'],
     overview:
       'Quando uma garota de doze anos apresenta comportamentos assustadores e violentos, sua mãe desesperada pede ajuda a dois padres católicos para realizar um exorcismo milenar em sua filha possessa.',
-    poster_path: '/9g5slgU4yHUvSqltpw39wmItIWsg.jpg',
+    poster_path: '/bYTMDg3eGFuO7emXbQip02a8zvQ.jpg',
   },
   {
     id: 92,
@@ -1023,18 +1023,18 @@ export const movies = [
     genres: ['Terror', 'Ficção Científica', 'Suspense'],
     overview:
       'Uma família tenta sobreviver em silêncio absoluto em um mundo pós-apocalíptico invadido por monstros extraterrestres cegos com audição hipersensível que matam tudo que emite som.',
-    poster_path: '/pL5G80pQfQyJ22R29yGZ3pS.jpg',
+    poster_path: '/jk1LYcbiuUr0tv37cVcmp4u9KcN.jpg',
   },
   {
     id: 93,
     title: 'O Bebê de Rosemary',
     type: 'movie',
     release_year: 1968,
-    rating: 8.0,
+    rating: 8,
     genres: ['Terror', 'Drama', 'Mistério'],
     overview:
       'Uma jovem recém-casada engravida após mudar-se para um apartamento em Nova York cercado por vizinhos idosos e excessivamente gentis, suspeitando gradualmente que seu bebê corre perigo de culto satânico.',
-    poster_path: '/9g5slgU4yHUvSqltpw39wmItIWsg.jpg',
+    poster_path: '/4p8ljwqw0SJjKszU0ZSPTjYFbeR.jpg',
   },
   {
     id: 94,
@@ -1045,7 +1045,7 @@ export const movies = [
     genres: ['Ficção Científica', 'Suspense', 'Drama', 'Mistério'],
     overview:
       'Um jovem programador de uma grande empresa de tecnologia vence um concurso para passar uma semana na casa de campo isolada do CEO da companhia, descobrindo que foi escalado para testar um androide com IA feminina.',
-    poster_path: '/gVc1tWw2qIMc3fTPCwqJmCNqPEw7.jpg',
+    poster_path: '/hfpnFtgcYom9Gk9s1IyWiovpZYg.jpg',
   },
   {
     id: 95,
@@ -1056,7 +1056,7 @@ export const movies = [
     genres: ['Ficção Científica', 'Drama', 'Mistério', 'Suspense'],
     overview:
       'Quando doze naves espaciais misteriosas pousam em diferentes pontos da Terra, uma linguista de elite lidera uma equipe militar para tentar traduzir e se comunicar com os alienígenas antes de uma guerra global.',
-    poster_path: '/gVc1tWw2qIMc3fTPCwqJmCNqPEw7.jpg',
+    poster_path: '/3rDwbFpn6z5HJUgDjpfhEePx8VI.jpg',
   },
   {
     id: 96,
@@ -1067,7 +1067,7 @@ export const movies = [
     genres: ['Ficção Científica', 'Ação', 'Suspense'],
     overview:
       'Um agente secreto é recrutado por uma organização misteriosa para impedir uma Terceira Guerra Mundial, usando uma tecnologia capaz de inverter a entropia e fazer o tempo correr para trás.',
-    poster_path: '/gVc1tWw2qIMc3fTPCwqJmCNqPEw7.jpg',
+    poster_path: '/Ae0pbv4E6YfqfN3UjKWIfQSzP9v.jpg',
   },
   {
     id: 97,
@@ -1078,7 +1078,7 @@ export const movies = [
     genres: ['Animação', 'Ficção Científica', 'Ação', 'Aventura', 'Drama'],
     overview:
       'Em 2071, um grupo eclético de caçadores de recompensas viaja a bordo da nave Bebop pelo sistema solar em busca de criminosos, enquanto tentam escapar de segredos dolorosos do passado.',
-    poster_path: '/h8QDQDQDQDQDQDQDQDQDQDQDQ.jpg',
+    poster_path: '/hbLDwYri1pyiEIMpICgftu7s8NE.jpg',
   },
   {
     id: 98,
@@ -1089,7 +1089,7 @@ export const movies = [
     genres: ['Ficção Científica', 'Aventura', 'Ação'],
     overview:
       "Após a queda do Império Galáctico, um caçador de recompensas mandaloriano solitário viaja pelos limites externos da galáxia, assumindo a missão de proteger uma criatura misteriosa conhecida como 'A Criança'.",
-    poster_path: '/ztkUQj61i1ZXYB57o2o3Lhj56rR.jpg',
+    poster_path: '/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg',
   },
   {
     id: 99,
@@ -1100,17 +1100,17 @@ export const movies = [
     genres: ['Ação', 'Aventura', 'Comédia'],
     overview:
       'O ex-Vingador Clint Barton se alia a Kate Bishop, uma jovem arqueira de 22 anos fã do herói, para enfrentar inimigos de seu passado como Ronin a tempo de voltar para sua família no Natal.',
-    poster_path: '/ztkUQj61i1ZXYB57o2o3Lhj56rR.jpg',
+    poster_path: '/yPRl1dvc0FHi8Syy1XhsoMumw9J.jpg',
   },
   {
     id: 100,
     title: 'Os Simpsons',
     type: 'series',
     release_year: 1989,
-    rating: 8.0,
+    rating: 8,
     genres: ['Animação', 'Comédia'],
     overview:
       'Acompanhe as aventuras satíricas e o cotidiano disfuncional de Homer, Marge, Bart, Lisa e Maggie na caricata e engraçada cidade americana de Springfield.',
-    poster_path: '/h8QDQDQDQDQDQDQDQDQDQDQDQ.jpg',
+    poster_path: '/1jGPgDDcmg3Xgs3WO8sfYfbnFoA.jpg',
   },
 ]

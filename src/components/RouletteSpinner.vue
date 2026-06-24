@@ -8,19 +8,24 @@
         <div class="reel-track flex flex-center" :style="trackStyle">
           <!-- Current visible poster -->
           <div class="poster-wrapper">
-            <q-img
+            <img
               v-if="currentPoster"
               :src="getImageUrl(currentPoster)"
-              fit="cover"
               class="roulette-poster"
-              height="360px"
-              width="240px"
-              no-spinner
-            >
-              <div v-if="spinning" class="absolute-full flex flex-center blur-overlay">
-                <q-spinner-oval color="accent" size="40px" />
-              </div>
-            </q-img>
+              referrerpolicy="no-referrer"
+              @error="onImgError"
+              style="
+                width: 240px;
+                height: 360px;
+                object-fit: cover;
+                display: block;
+                border-radius: 16px;
+              "
+            />
+            <div v-if="spinning" class="absolute-full flex flex-center blur-overlay">
+              <q-spinner-oval color="accent" size="40px" />
+            </div>
+
             <div v-else class="empty-poster flex flex-center">
               <q-icon name="videogame_asset" size="64px" color="accent" />
               <div class="text-subtitle2 q-mt-md text-grey-4">Pressione Sortear!</div>
@@ -38,6 +43,10 @@
 
 <script setup>
 import { ref, computed, watch } from 'vue'
+const onImgError = (e) => {
+  e.target.src =
+    'https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=500'
+}
 
 const props = defineProps({
   spinning: {
@@ -63,9 +72,8 @@ const getImageUrl = (path) => {
   if (!path)
     return 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=500'
   if (path.startsWith('http')) return path
-  return `https://image.tmdb.org/t/p/w500${path}`
+  return `/posters/${path.slice(1)}` // aponta para public/posters/
 }
-
 const trackStyle = computed(() => {
   if (!props.spinning) return {}
   return {

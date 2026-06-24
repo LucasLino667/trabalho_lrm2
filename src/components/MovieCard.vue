@@ -1,25 +1,21 @@
 <template>
-  <q-card class="glass-card movie-card overflow-hidden full-height flex flex-direction-column">
+  <q-card class="glass-card movie-card overflow-hidden full-height column">
     <div class="relative-position image-container">
-      <q-img
+      <img
         :src="getImageUrl(movie.poster_path)"
         class="movie-poster"
-        fit="cover"
-        height="360px"
-        no-spinner
-      >
-        <template v-slot:error>
-          <div class="absolute-full flex flex-center bg-dark text-grey-5">
-            <q-icon name="movie" size="64px" />
-            <div class="q-mt-md text-subtitle2">Sem pôster disponível</div>
-          </div>
-        </template>
-      </q-img>
+        referrerpolicy="no-referrer"
+        loading="lazy"
+        @error="onImgError"
+        style="width: 100%; height: 360px; object-fit: cover; display: block"
+      />
 
       <div class="absolute-top-right q-ma-md rating-badge-container">
         <div class="rating-badge flex items-center q-px-sm q-py-xs">
           <q-icon name="star" color="amber" size="18px" class="q-mr-xs" />
-          <span class="text-white text-weight-bold">{{ formatRating(movie.rating) }}</span>
+          <span class="text-white text-weight-bold">
+            {{ formatRating(movie.rating) }}
+          </span>
         </div>
       </div>
 
@@ -36,15 +32,19 @@
       </div>
     </div>
 
-    <q-card-section class="col q-pa-md flex flex-column justify-between">
+    <q-card-section class="col q-pa-md column justify-between">
       <div>
         <div class="row no-wrap items-start justify-between q-mb-xs">
           <div class="text-h6 text-weight-bold text-white line-clamp-2 leading-tight">
             {{ movie.title }}
           </div>
         </div>
+
         <div class="text-subtitle2 text-grey-4 q-mb-sm">
-          Lançamento: <span class="text-white text-weight-bold">{{ movie.release_year }}</span>
+          Lançamento:
+          <span class="text-white text-weight-bold">
+            {{ movie.release_year }}
+          </span>
         </div>
 
         <div class="row q-gutter-xs q-mb-md">
@@ -83,7 +83,6 @@
 </template>
 
 <script setup>
-// Definição correta das Props
 const props = defineProps({
   movie: {
     type: Object,
@@ -91,18 +90,17 @@ const props = defineProps({
   },
 })
 
+const onImgError = (event) => {
+  event.target.src =
+    'https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=500'
+}
+
 // Gerador de URLs robusto
 const getImageUrl = (path) => {
-  console.log('poster_path recebido:', path)
-  if (!path) {
+  if (!path)
     return 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=500'
-  }
-  if (path.startsWith('http')) {
-    return path
-  }
-  const url = `https://image.tmdb.org/t/p/w500${path}`
-  console.log('URL final:', url)
-  return url
+  if (path.startsWith('http')) return path
+  return `/posters/${path.slice(1)}` // aponta para public/posters/
 }
 
 const formatRating = (rating) => {
@@ -155,7 +153,6 @@ const searchWhereToWatch = () => {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .line-clamp-4 {
@@ -163,7 +160,6 @@ const searchWhereToWatch = () => {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
   line-height: 1.5;
 }
 
@@ -181,7 +177,6 @@ const searchWhereToWatch = () => {
 
   &:hover {
     background: rgba(0, 240, 255, 0.1);
-    border-style: solid;
     border-color: rgba(0, 240, 255, 0.6);
   }
 }
