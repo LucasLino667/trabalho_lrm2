@@ -5,7 +5,9 @@ Projeto de Programação Web 1
 Idéia do projeto: um app / desktop que escolhe um ou mais sugestões de filmes para assistir
 
 Integrantes: Renan Phelipe Vieira , Poliana Masotti e Lucas Lino
-
+prompts iniciais 
+De ideias que sejam faceis de fazer com Quasar 
+De ideias relacionadas a entretenimento
 prompts Lucas lino: <template>
 
   <q-card class="glass-card movie-card overflow-hidden full-height flex flex-direction-column">
@@ -809,4 +811,14 @@ agora so aparece a imagem de postar nao encontrado padrao e nao o poster do film
 43 falharam e nenhum baixados
 todos deu certo
 
+prompt akinator: 
+Como eu faço para adicionar um Akinator roxo na parte do quiz
+Adicionar a animação do Genio
+Adicionar o Gênio na área de resultados
+Mostrar o código completo do arquivo HumorQuiz.vue pronto
 
+prompt efeito visual:
+Como fazer chuva de confete ao encontrar o match
+Achar o erro no código 
+Pode alterar o código
+Como fazer o feito de brilho neon
